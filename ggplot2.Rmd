@@ -8,3 +8,19 @@ output: html_document
 # Learning ggplot2
 
 We are learning ggplot2 it's going to be amazing
+
+## Plotting graph
+To build ggplot, we need to do some steps
+1. specify the data
+```{r, echo=false}
+ggplot(data = mpg)
+```
+2. define aesthetics by selecting the variable to be plotted and the variable to be presented such as size, color, shape etc.
+```{r, echo=false}
+ggplot(data=mpg, aes(x=displ, y=hwy))
+```
+you can see that the graph does nit show any graphic information. it is because we do not add a formula which defines any graphical representation
+3. select graphical representations which is provided by the package
+```{r, echo=false}
+ggplot(data=mpg, aes(x=displ, y=hwy)) + geom_point()
+```
