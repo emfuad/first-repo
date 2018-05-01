@@ -21,6 +21,6 @@ ggplot(data=mpg, aes(x=displ, y=hwy))
 ```
 you can see that the graph does nit show any graphic information. it is because we do not add a formula which defines any graphical representation
 3. select graphical representations which is provided by the package
-```{r, echo=false}
+```{r}
 ggplot(data=mpg, aes(x=displ, y=hwy)) + geom_point()
 ```
